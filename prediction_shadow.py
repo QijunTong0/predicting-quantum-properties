@@ -23,8 +23,8 @@ if __name__ == "__main__":
     def print_usage():
         print("Usage:\n", file=sys.stderr)
         print("./prediction_shadow -o [measurement.txt] [observable.txt]", file=sys.stderr)
-        print("    This option predicts the expectation of local observables.", file=sys.stderr)
-        print("    We would output the predicted value for each local observable given in [observable.txt]", file=sys.stderr)
+        print("    このオプションは局所観測量の期待値を予測します。", file=sys.stderr)
+        print("    [observable.txt] で指定された各局所観測量について、予測値を出力します。", file=sys.stderr)
 
     if len(sys.argv) != 4:
         print_usage()

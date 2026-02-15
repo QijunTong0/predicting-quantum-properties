@@ -1,8 +1,13 @@
+#
+# 観測量を生成するプログラム
+# システムサイズ 20 の量子系に対して、特定のパウリ観測量のリストを生成します。
+#
 observable_file = open('generated_observables.txt', 'w')
 
 system_size = 20
 print(system_size, file = observable_file)
 
+# 2-local 観測量 (隣接する量子ビット間の相関など) を生成しているようです
 for i in range(system_size - 1):
     for j in range(system_size - 1):
         if j == i or j == i + 1 or j+1 == i: continue
